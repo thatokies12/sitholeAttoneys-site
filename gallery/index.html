@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — T.R. Sithole Attorneys</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<style>
+  .gallery-page-hero{background:var(--coal); color:var(--parchment); padding:170px 0 60px;}
+  .gallery-page-hero .back-link{font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ochre); display:inline-flex; align-items:center; gap:8px; margin-bottom:22px;}
+  .gallery-page-hero h1{font-size:clamp(30px,4vw,46px);}
+  .full-gallery{background:var(--parchment); padding:70px 0 110px;}
+</style>
+</head>
+<body>
+
+<nav class="nav solid" id="nav">
+  <a href="../index.html" class="brand">
+    <span class="logo-slot">
+      <svg class="seal-mark" viewBox="0 0 60 60" fill="none">
+        <circle cx="30" cy="30" r="27" stroke="#B8923D" stroke-width="1.2"/>
+        <circle cx="30" cy="30" r="21" stroke="#8C6F2E" stroke-width="1"/>
+        <text x="30" y="36" text-anchor="middle" font-family="Fraunces, serif" font-size="18" fill="#F3EDE0">TS</text>
+      </svg>
+    </span>
+    <span class="brand-text">
+      <span class="name">T.R. Sithole Attorneys</span><br>
+      <span class="sub">Emalahleni · Est. 2017</span>
+    </span>
+  </a>
+  <div class="nav-links">
+    <a href="../index.html#home">Home</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#practice">Practice Areas</a>
+    <a href="../index.html#leadership">Leadership</a>
+    <a href="../index.html#contact">Contact</a>
+    <a href="../index.html#contact" class="nav-cta">Request Consultation</a>
+  </div>
+  <button class="burger" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="menu-close" id="menuClose" aria-label="Close menu">&times;</button>
+  <a href="../index.html#home">Home</a>
+  <a href="../index.html#about">About</a>
+  <a href="../index.html#practice">Practice Areas</a>
+  <a href="../index.html#leadership">Leadership</a>
+  <a href="../index.html#contact">Contact</a>
+  <a href="../index.html#contact" class="nav-cta">Request Consultation</a>
+</div>
+
+<section class="gallery-page-hero">
+  <div class="wrap">
+    <a href="../index.html" class="back-link">&#8592; Back to Home</a>
+    <h1>Full Gallery</h1>
+    <p style="margin-top:14px; color:rgba(243,237,224,0.65); max-width:50ch; font-size:15.5px;">All 30 photographs from T.R. Sithole Attorneys — our offices, our people, and our work in the Emalahleni community.</p>
+  </div>
+</section>
+
+<section class="full-gallery">
+  <div class="wrap">
+    <div class="g-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lbClose">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lbPrev">&#8249;</button>
+  <button class="lightbox-nav lightbox-next" id="lbNext">&#8250;</button>
+  <div class="lightbox-inner">
+    <div id="lbImageWrap"></div>
+    <div class="lightbox-cap" id="lbCap"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">
+      <span class="logo-slot">
+        <svg class="seal-mark" viewBox="0 0 60 60" fill="none">
+          <circle cx="30" cy="30" r="27" stroke="#B8923D" stroke-width="1"/>
+          <text x="30" y="36" text-anchor="middle" font-family="Fraunces, serif" font-size="18" fill="#F3EDE0">TS</text>
+        </svg>
+      </span>
+      <span class="brand-text"><span class="name" style="color:var(--parchment)">T.R. Sithole Attorneys</span></span>
+    </div>
+    <div class="f-links">
+      <a href="../index.html#home">Home</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#practice">Practice Areas</a>
+      <a href="../index.html#leadership">Leadership</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </div>
+  <p class="copy">T.R. SITHOLE ATTORNEYS &middot; EMALAHLENI, MPUMALANGA &middot; EST. 2017 &middot; ALL RIGHTS RESERVED</p>
+</footer>
+
+<script>window.ASSET_PREFIX = '../';</script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/gallery.js"></script>
+<script>
+  // Photos live in this same folder, so the path prefix is empty.
+  galleryItemsForLightbox = renderGallery('galleryGrid', null, '');
+  initLightboxControls();
+</script>
+
+</body>
+</html>
