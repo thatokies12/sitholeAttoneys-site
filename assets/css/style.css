@@ -338,3 +338,449 @@
     .seal circle, .seal path, .seal line{stroke-dashoffset:0;}
     .seal .inner-fill{opacity:1;}
   }
+
+
+/* =========================================
+   ABOUT PAGE - FIX TEXT VISIBILITY & SPACING
+========================================= */
+
+/* Make sure sections can grow naturally */
+.page-hero,
+.page-content,
+.values-section,
+.process-section,
+.community-section,
+.about-cta {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.page-hero {
+    padding: 150px 0 90px;
+}
+
+.page-hero .wrap {
+    position: relative;
+    z-index: 2;
+}
+
+.page-hero h1 {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    overflow: visible;
+    margin: 20px 0 25px;
+}
+
+.page-hero h1 em {
+    display: inline;
+}
+
+.page-hero p {
+    display: block;
+    visibility: visible;
+    opacity: .85;
+    height: auto;
+    overflow: visible;
+    max-width: 680px;
+}
+
+
+/* =========================================
+   ABOUT CONTENT
+========================================= */
+
+.page-content {
+    padding: 90px 0;
+}
+
+.about-grid {
+    align-items: start;
+}
+
+.about-grid > div {
+    min-width: 0;
+}
+
+.about-grid h2 {
+    display: block;
+    height: auto;
+    overflow: visible;
+    margin: 15px 0 30px;
+}
+
+.about-grid p {
+    display: block;
+    height: auto;
+    overflow: visible;
+    line-height: 1.8;
+    margin: 0 0 22px;
+}
+
+
+/* =========================================
+   LEDGER
+========================================= */
+
+.ledger {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+}
+
+.ledger h3 {
+    display: block;
+    height: auto;
+    overflow: visible;
+}
+
+.ledger p {
+    display: block;
+    height: auto;
+    overflow: visible;
+}
+
+
+/* =========================================
+   VALUES
+========================================= */
+
+.values-section {
+    padding: 100px 0;
+}
+
+.values-section .section-heading {
+    height: auto;
+    overflow: visible;
+}
+
+.values-section h2 {
+    display: block;
+    height: auto;
+    overflow: visible;
+}
+
+.values-grid {
+    height: auto;
+    overflow: visible;
+}
+
+.value-card {
+    height: auto;
+    min-height: 280px;
+    overflow: visible;
+}
+
+.value-card h3 {
+    display: block;
+    height: auto;
+    overflow: visible;
+    margin: 25px 0 15px;
+}
+
+.value-card p {
+    display: block;
+    height: auto;
+    overflow: visible;
+}
+
+
+/* =========================================
+   HOW WE WORK
+========================================= */
+
+.process-section {
+    padding: 100px 0;
+}
+
+.process-section .section-heading {
+    height: auto;
+    overflow: visible;
+}
+
+.process-section h2 {
+    display: block;
+    height: auto;
+    overflow: visible;
+}
+
+.process-section p {
+    height: auto;
+    overflow: visible;
+}
+
+.process-grid {
+    height: auto;
+    overflow: visible;
+}
+
+.process-card {
+    height: auto;
+    min-height: 280px;
+    overflow: visible;
+}
+
+.process-card h3 {
+    display: block;
+    height: auto;
+    overflow: visible;
+}
+
+.process-card p {
+    display: block;
+    height: auto;
+    overflow: visible;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   COMMUNITY
+========================================= */
+
+.community-section {
+    padding: 100px 0;
+}
+
+.community-grid {
+    align-items: start;
+}
+
+.community-grid h2 {
+    display: block;
+    height: auto;
+    overflow: visible;
+}
+
+.community-grid p {
+    display: block;
+    height: auto;
+    overflow: visible;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.about-cta {
+    padding: 100px 0;
+}
+
+.cta-inner {
+    height: auto;
+    overflow: visible;
+}
+
+.cta-inner h2 {
+    display: block;
+    height: auto;
+    overflow: visible;
+}
+
+.cta-inner p {
+    display: block;
+    height: auto;
+    overflow: visible;
+}
+
+
+/* =========================================
+   REVEAL ANIMATION FIX
+========================================= */
+
+/*
+   If main.js uses .reveal to hide elements before
+   animation, this makes sure the page remains readable
+   even if the animation does not run correctly.
+*/
+
+.reveal {
+    height: auto;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.site-logo {
+    width: 58px;
+    height: 58px;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .page-hero {
+        padding: 130px 0 70px;
+    }
+
+    .page-hero h1 {
+        font-size: 48px;
+        line-height: 1.05;
+    }
+
+    .page-content {
+        padding: 70px 0;
+    }
+
+    .about-grid,
+    .community-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .about-grid h2,
+    .community-grid h2 {
+        font-size: 45px;
+        line-height: 1.05;
+    }
+
+    .values-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .value-card,
+    .process-card {
+        min-height: 0;
+        padding: 35px 25px;
+    }
+
+    .about-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .page-hero h1 {
+        font-size: 40px;
+    }
+
+    .about-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-stat {
+        border-left: 1px solid var(--line-dark);
+    }
+
+}
+
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+/* About page hero */
+.page-hero {
+    background: #111111;
+    color: #f4efe6;
+    padding: 150px 0 90px;
+}
+
+.page-hero .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-hero .mono {
+    color: #c8a96b;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.page-hero h1 {
+    font-family: "Fraunces", serif;
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 0.95;
+    font-weight: 500;
+    margin: 20px 0;
+    color: #f4efe6;
+}
+
+.page-hero h1 em {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.page-hero p {
+    max-width: 650px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgba(244, 239, 230, 0.75);
+}
+
+
+/* =========================================
+   ABOUT STORY
+========================================= */
+
+.page-content {
+    padding: 100px 0;
+    background: #f4efe6;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.about-grid h2 {
+    font-family: "Fraunces", serif;
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1;
+    font-weight: 500;
+    margin: 15px 0 35px;
+    color: #111111;
+}
+
+.about-grid p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.about-grid .mono {
+    color: #8b6d35;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   FIRM DETAILS CARD
+========================================= */
+
+.ledger {
+    background: #111111;
+    color: #f4efe6;
+    padding: 40px;
+}
+
+.ledger .mono
