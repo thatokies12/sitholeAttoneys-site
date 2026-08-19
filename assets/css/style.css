@@ -28,6 +28,13 @@
   .wrap{max-width:var(--max); margin:0 auto; padding:0 32px;}
   @media(max-width:640px){.wrap{padding:0 20px;}}
 
+.site-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+}
+
   /* ---------- NAV ---------- */
   .nav{
     position:fixed; top:0; left:0; right:0; z-index:100;

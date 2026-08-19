@@ -3,29 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gallery — T.R. Sithole Attorneys</title>
+<title>Leadership — T.R. Sithole Attorneys</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
-<style>
-  .gallery-page-hero{background:var(--coal); color:var(--parchment); padding:170px 0 60px;}
-  .gallery-page-hero .back-link{font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ochre); display:inline-flex; align-items:center; gap:8px; margin-bottom:22px;}
-  .gallery-page-hero h1{font-size:clamp(30px,4vw,46px);}
-  .full-gallery{background:var(--parchment); padding:70px 0 110px;}
-</style>
 </head>
 <body>
 
 <nav class="nav solid" id="nav">
   <a href="../index.html" class="brand">
-  <span class="logo-slot">
+   
+       <span class="logo-slot">
   <img 
     src="../gallery/PHOTO-2026-08-18-14-00-42.jpg" 
     alt="T.R. Sithole Attorneys Logo"
     class="site-logo"
   >
 </span>
+   
     <span class="brand-text">
       <span class="name">T.R. Sithole Attorneys</span><br>
       <span class="sub">Emalahleni · Est. 2017</span>
@@ -35,6 +31,7 @@
     <a href="../index.html#home">Home</a>
     <a href="../about/index.html">About</a>
     <a href="../practice/index.html">Practice Areas</a>
+    <a href="../gallery/index.html">Gallery</a>
     <a href="../leadership/index.html">Leadership</a>
     <a href="../index.html#contact">Contact</a>
     <a href="../index.html#contact" class="nav-cta">Request Consultation</a>
@@ -47,39 +44,49 @@
   <a href="../index.html#home">Home</a>
   <a href="../about/index.html">About</a>
   <a href="../practice/index.html">Practice Areas</a>
+  <a href="../gallery/index.html">Gallery</a>
   <a href="../leadership/index.html">Leadership</a>
   <a href="../index.html#contact">Contact</a>
   <a href="../index.html#contact" class="nav-cta">Request Consultation</a>
 </div>
 
-<section class="gallery-page-hero">
-  <div class="wrap">
-    <a href="../index.html" class="back-link">&#8592; Back to Home</a>
-    <h1>Full Gallery</h1>
-    <p style="margin-top:14px; color:rgba(243,237,224,0.65); max-width:50ch; font-size:15.5px;">All 30 photographs from T.R. Sithole Attorneys — our offices, our people, and our work in the Emalahleni community.</p>
-  </div>
+
+<section>
+
 </section>
 
-<section class="full-gallery">
+
+<section class="page-content leadership" style="padding-top:20px;">
   <div class="wrap">
-    <div class="g-grid" id="galleryGrid"></div>
+    <div class="lead-grid reveal">
+      <div class="monogram">
+        <div class="ring"></div>
+        <img src="../gallery/PHOTO-2026-08-17-11-33-10_1.jpg" alt="Thembinkosi Raymond Sithole"
+             onerror="this.remove(); document.querySelector('.monogram .letters').style.display='flex';">
+        <span class="letters" style="display:none;">TS</span>
+      </div>
+      <div>
+        <h3 class="lead-name">Thembinkosi Raymond Sithole</h3>
+        <span class="lead-role">Executive Director</span>
+        <p class="lead-bio">Founder and Executive Director of T.R. Sithole Attorneys, admitted to practice in 2016 after completing his articles of clerkship. He leads the firm's civil, criminal and commercial matters, and has overseen its growth into a trusted medium-sized practice in Emalahleni.</p>
+        <div class="timeline">
+          <div class="t-item"><span class="yr">2013</span><span class="ev">LLB — University of Limpopo</span></div>
+          <div class="t-item"><span class="yr">2014</span><span class="ev">School for Legal Practice — Polokwane</span></div>
+          <div class="t-item"><span class="yr">2015</span><span class="ev">Articles of Clerkship — Mphela Attorneys</span></div>
+          <div class="t-item"><span class="yr">13 Jul 2016</span><span class="ev">Admitted as an Attorney of the High Court</span></div>
+          <div class="t-item"><span class="yr">1 Jan 2017</span><span class="ev">Founded T.R. Sithole Attorneys</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- Additional leadership / attorney profiles can be added here later,
+         each repeating the .lead-grid block above with its own photo, bio and timeline. -->
   </div>
 </section>
-
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close" id="lbClose">&times;</button>
-  <button class="lightbox-nav lightbox-prev" id="lbPrev">&#8249;</button>
-  <button class="lightbox-nav lightbox-next" id="lbNext">&#8250;</button>
-  <div class="lightbox-inner">
-    <div id="lbImageWrap"></div>
-    <div class="lightbox-cap" id="lbCap"></div>
-  </div>
-</div>
 
 <footer>
   <div class="wrap">
     <div class="brand">
-      <span class="logo-slot">
+         <span class="logo-slot">
   <img 
     src="../gallery/PHOTO-2026-08-18-14-00-42.jpg" 
     alt="T.R. Sithole Attorneys Logo"
@@ -92,6 +99,7 @@
       <a href="../index.html#home">Home</a>
       <a href="../about/index.html">About</a>
       <a href="../practice/index.html">Practice Areas</a>
+      <a href="../gallery/index.html">Gallery</a>
       <a href="../leadership/index.html">Leadership</a>
       <a href="../index.html#contact">Contact</a>
     </div>
@@ -99,14 +107,8 @@
   <p class="copy">T.R. SITHOLE ATTORNEYS &middot; EMALAHLENI, MPUMALANGA &middot; EST. 2017 &middot; ALL RIGHTS RESERVED</p>
 </footer>
 
-<script>window.LOGO_PATH = 'PHOTO-2026-08-18-14-00-42.jpg';</script>
+<script>window.LOGO_PATH = '../gallery/PHOTO-2026-08-18-14-00-42.jpg';</script>
 <script src="../assets/js/main.js"></script>
-<script src="../assets/js/gallery.js"></script>
-<script>
-  // Photos live in this same folder, so the path prefix is empty.
-  galleryItemsForLightbox = renderGallery('galleryGrid', null, '');
-  initLightboxControls();
-</script>
 
 </body>
 </html>
