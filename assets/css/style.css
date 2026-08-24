@@ -784,3 +784,13 @@
 }
 
 .ledger .mono
+
+@media (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .ledger {
+    padding: 28px 24px;
+  }
+}ss
